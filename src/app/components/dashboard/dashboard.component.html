@@ -1,0 +1,83 @@
+<div data-test="dashboard">
+
+    <div fxLayout="row" class="dashbaordNav" fxHide.lt-sm>
+        <div fxFlex="60" style="margin-left: 20px">
+            <h3 class="panel-title">Bulk Email System</h3>
+        </div>
+        <div fxFlex="25">
+
+        </div>
+        <div fxFlex="15">
+            <p style="text-align: right">
+                <!-- <img src="../../assets/images/logo.png" alt="" width="90" height="50"> -->
+            </p>
+        </div>
+
+    </div>
+
+    <!-- <div> <app-alert></app-alert> </div> -->
+    <div class="container panel panel-info">
+
+        <div fxLayout="row" fxLayout.lt-sm="column">
+            <div fxFlex="20" fxFlexOffset="2.5" class="blue-menu blue-background shadow">
+
+                <h2 class="blue-title">
+                    <span>Welcome</span>
+                </h2>
+
+                <!-- main left menu -->
+
+                <ul class="main-menu" fxHide.lt-sm>
+                    <li> <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <mat-icon class="mat-18">list</mat-icon>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>                       
+                        <a routerLink="/dashboard/mail-group" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}">
+                        <mat-icon class="mat-18">store</mat-icon>
+                        Mail Groups </a>
+                        
+                    </li>
+                    <li><a routerLink="/" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">
+                            <mat-icon class="mat-18">receipt</mat-icon>
+                            Mail List
+                        </a>
+                    </li>
+                    <li><a routerLink="/" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">
+                            <mat-icon class="mat-18">receipt</mat-icon>
+                            Mails 
+                        </a>
+                    </li>                   
+                   
+                    <li><a routerLink="/" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">
+                            <mat-icon class="mat-18">settings</mat-icon>
+                            Settings
+                        </a>
+                    </li>
+                    <li>
+                        <button mat-raised-button >
+                            <mat-icon class="mat-19">settings_power</mat-icon>LogOut
+                        </button>
+                    </li>
+                </ul>
+
+
+
+
+
+            </div>
+            <div fxFlex="80" class="content-holder">
+                <mat-card>
+            <!-- <alert></alert> <hr> -->
+            <router-outlet></router-outlet>
+        </mat-card>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+.blue-background {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border: solid 1.5px rgb(236, 198, 148);;  
+    background: rgb(2, 33, 41);
+    background: -webkit-linear-gradient(to bottom, #0033A1, rgb(211, 194, 146));
+    background: linear-gradient(to bottom, #0033A1, rgb(2, 33, 41));
+  }
+  .shadow {
+    box-shadow: 0 8px 6px -6px black;
+  }
+  .shadow-right {
+    -webkit-box-shadow: 11px 0px 5px 0px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 11px 0px 5px 0px rgba(204, 204, 204, 1);
+    box-shadow: 11px 0px 5px 0px rgba(204, 204, 204, 1);
+  }
+  .panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+  }
+  .panel-heading {
+    padding: 5px 5px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+.panel-primary {
+    border-color: #337ab7;
+}
+.panel-success>.panel-heading {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.panel-info>.panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.panel-danger>.panel-heading {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert-success{
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  border-radius: 6px;
+}
+.alert-danger{
+  color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    border-radius: 6px;
+}
+
+/* fallback */
+/* @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2') format('woff2');
+} */
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
