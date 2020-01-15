@@ -1,4 +1,9 @@
 # Docker
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Run a Docker Compose command'
 - task: Docker@2
   inputs:
     command: 'buildAndPush'
